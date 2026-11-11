@@ -5,7 +5,7 @@ const test = require('node:test');
 const fs = require('node:fs');
 const vm = require('node:vm');
 
-const SCOPE = 'https://w8lbz.github.io/uvstudio/';
+const SCOPE = 'https://ko4cgq.github.io/uvstudio-plus/';
 
 // Runs sw.js (with a file list and build, as the Pages workflow fills them) against a fake
 // network and CacheStorage.
@@ -30,7 +30,7 @@ function worker(files, build, stores = new Map()) {
     URL,
     setTimeout,
     Request: class { constructor(url, init) { this.url = url; this.cache = init?.cache; } },
-    self: { registration: { scope: SCOPE }, location: { origin: 'https://w8lbz.github.io' },
+    self: { registration: { scope: SCOPE }, location: { origin: 'https://ko4cgq.github.io' },
       skipWaiting() {}, clients: { claim: async () => {} }, addEventListener: (type, fn) => { listeners[type] = fn; } },
     caches: { open: async name => openCache(name), keys: async () => [...stores.keys()], delete: async name => stores.delete(name) },
     fetch: async req => { if (net.stalled) await new Promise(r => setTimeout(r, 200)); if (!net.online) throw new TypeError('offline'); return { ok: true, body: `${req.url} ${net.version}`, clone() { return this; } }; },

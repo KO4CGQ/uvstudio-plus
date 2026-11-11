@@ -7,6 +7,11 @@ From 2026.10.0 on, UV Studio+ uses calendar versions (year.month.release), and A
 shows which UV Studio release it is based on. Earlier releases were numbered
 `<UV Studio version>-w8lbz.<N>`. Builds on the test site show `+test.<commit>`.
 
+## Unreleased
+
+- Moved to https://ko4cgq.github.io/uvstudio-plus/ (repo: github.com/KO4CGQ/uvstudio-plus). Old links forward
+  there; the Claude plugin is now added with `/plugin marketplace add KO4CGQ/uvstudio-plus`.
+
 ## 2026.11.1 (2026-11-02)
 
 Based on UV Studio 2.4.0.

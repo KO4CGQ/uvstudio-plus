@@ -40,6 +40,6 @@ test('SKILL.md metadata.version matches plugin.json', () => {
 
 test('SKILL.md update check points at this plugin.json on main', () => {
   assert.ok(
-    skill.includes('https://raw.githubusercontent.com/w8lbz/uvstudio/main/plugins/uvstudio-plus/.claude-plugin/plugin.json')
+    skill.includes('https://raw.githubusercontent.com/KO4CGQ/uvstudio-plus/main/plugins/uvstudio-plus/.claude-plugin/plugin.json')
   );
 });

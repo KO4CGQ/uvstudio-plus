@@ -5,7 +5,7 @@ CHIRP-style memory channels and radio settings for Quansheng UV-K1 and UV-K5 V3
 radios on F4HWN firmware. It is an independent fork maintained by KO4CGQ for the
 W8LBZ club, and it follows every UV Studio release.
 
-[Open UV Studio+](https://w8lbz.github.io/uvstudio/)
+[Open UV Studio+](https://ko4cgq.github.io/uvstudio-plus/)
 
 F4HWN doesn't support this fork: please report UV Studio+ problems here, not
 upstream. Original UV Studio: <https://armel.github.io/uvstudio/>
@@ -131,13 +131,13 @@ drives UV Studio+ through Claude in Chrome (navigate, configure memories and set
 hardware-test builds). In Claude Code:
 
 ```
-/plugin marketplace add w8lbz/uvstudio
+/plugin marketplace add KO4CGQ/uvstudio-plus
 /plugin install uvstudio-plus@w8lbz
 ```
 
 In Claude Code, auto-update is off by default for this marketplace. To get new versions
 automatically, run `/plugin`, open Marketplaces, select `w8lbz` and choose Enable auto-update.
-In Claude Desktop, add it under Settings > Plugins > Add with the URL `w8lbz/uvstudio`; leave
+In Claude Desktop, add it under Settings > Plugins > Add with the URL `KO4CGQ/uvstudio-plus`; leave
 Sync automatically on to get new versions. On claude.ai,
 upload `plugins/uvstudio-plus/skills/uvstudio/SKILL.md` as a skill; it says at the end of a
 run when a newer version is out.

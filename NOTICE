@@ -1,5 +1,5 @@
 UV Studio+
-Modifications Copyright 2026 KO4CGQ (W8LBZ fork, https://github.com/W8LBZ/uvstudio)
+Modifications Copyright 2026 KO4CGQ (W8LBZ fork, https://github.com/KO4CGQ/uvstudio-plus)
 
 Based on:
 
@@ -14,7 +14,7 @@ Copyright 2025 Armel FAUVEAU
 UVTools2
 Copyright 2025 Armel FAUVEAU
 
-W8LBZ fork (https://github.com/W8LBZ/uvstudio) bundles:
+W8LBZ fork (https://github.com/KO4CGQ/uvstudio-plus) bundles:
 
 marked v12.0.2 (js/vendor/marked.min.js)
 Copyright (c) 2011-2024, Christopher Jeffrey. MIT License.

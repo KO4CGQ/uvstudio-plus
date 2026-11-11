@@ -9,8 +9,8 @@ metadata:
 
 UV Studio+ is a static web app that talks to a Quansheng UV-K5 V3 / UV-K1 running F4HWN firmware over Web Serial. It extends UV Studio with **Memories** and **Radio settings** pages. You drive it through Claude in Chrome in a tab the user already has open, with their radio plugged in over USB.
 
-- **Live site:** https://w8lbz.github.io/uvstudio/ (the released build; use it unless told otherwise).
-- **Test builds:** https://w8lbz.github.io/uvstudio/test/ (untested work; only when a test plan names it).
+- **Live site:** https://ko4cgq.github.io/uvstudio-plus/ (the released build; use it unless told otherwise).
+- **Test builds:** https://ko4cgq.github.io/uvstudio-plus/test/ (untested work; only when a test plan names it).
 - **Upstream UV Studio**, which UV Studio+ is based on: https://armel.github.io/uvstudio/ . It has no Memories or Radio settings pages.
 
 You are a user of the app here, not a developer: **report bugs, never patch the page or its code.**
@@ -19,7 +19,7 @@ You are a user of the app here, not a developer: **report bugs, never patch the 
 
 Draft the report (steps, expected vs seen, exact log lines, build version from the sidebar footer, radio firmware version) and give it to the user to file. Never file issues, comment or post yourself.
 
-- **UV Studio+ (https://github.com/w8lbz/uvstudio/issues):** anything on the **Memories** or **Radio settings** pages (CSV import/export, extra columns, checks, Close gaps, backups, VFOs, scan list names), their help pop-ups, the sidebar version and About, the offline/install behavior, and this skill.
+- **UV Studio+ (https://github.com/KO4CGQ/uvstudio-plus/issues):** anything on the **Memories** or **Radio settings** pages (CSV import/export, extra columns, checks, Close gaps, backups, VFOs, scan list names), their help pop-ups, the sidebar version and About, the offline/install behavior, and this skill.
 - **armel (https://github.com/armel/uv-k1-k5v3-firmware-custom/issues):** the radio's own behavior (firmware), and the pages UV Studio+ shares with UV Studio: Live Viewer, RF Log, Flash Firmware, Firmware Slots, Apps, Calibration, Boot Logo, External Flash, Factory reset.
 - **Not sure** (a shared page acting oddly, or something that may be the radio): check whether it also happens on upstream UV Studio. Same there: armel. Only in UV Studio+: UV Studio+. Say which you checked.
 
@@ -125,7 +125,7 @@ One table: step, pass / partial / fail / skipped, what you saw. Then bugs ranked
 - **Physical checks:** anything needing eyes on the radio, a replug, or a transmit. Mark those **skipped (for user)**, not failed.
 - **Pending writes:** remind them to Write and handle the license dialog.
 - **Skill update (once, at the end of the run, never mid-task):** fetch
-  `https://raw.githubusercontent.com/w8lbz/uvstudio/main/plugins/uvstudio-plus/.claude-plugin/plugin.json`
+  `https://raw.githubusercontent.com/KO4CGQ/uvstudio-plus/main/plugins/uvstudio-plus/.claude-plugin/plugin.json`
   (web fetch, or `fetch()` in the UV Studio+ tab: raw.githubusercontent.com allows it) and compare its
   `version` with this skill's `metadata.version`. Only if it's newer, add one line: "uvstudio-plus <new> is
   out (you have <old>). Claude Code: `/plugin marketplace update w8lbz`, or turn on auto-update. claude.ai:
